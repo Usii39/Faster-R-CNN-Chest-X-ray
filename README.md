@@ -16,6 +16,12 @@
 * **類別平衡策略 (Class Balancing)**：實作 `WeightedRandomSampler` 搭配替換採樣機制，強制提升稀有病灶 (如肋膜增厚) 在訓練批次中的曝光率。
 * **線上光度增強 (Online Photometric Augmentation)**：引入 Color Jitter ($\pm 50\%$ 亮度與對比)，防止模型對過採樣之稀有樣本產生過度擬合。
 * **可解釋性分析 (XAI)**：整合 `EigenCAM` 進行熱力圖視覺化，深入探討模型的捷徑學習 (Shortcut Learning) 與紋理識別限制。
+<img width="1200" height="600" alt="Figure_2 TrainValSplit" src="https://github.com/user-attachments/assets/22b69d38-0b88-4fb0-88e7-ae0b61d28d28" />
+<img width="800" height="800" alt="Figure_0 Pie" src="https://github.com/user-attachments/assets/71417ca4-b675-4cc2-abd9-34311b15f6cf" />
+<img width="1989" height="955" alt="Figure_4 mAP" src="https://github.com/user-attachments/assets/59525cf0-102d-424b-b237-b1c1f18a4285" />
+<img width="1490" height="794" alt="Figure_6 AECam" src="https://github.com/user-attachments/assets/449f151e-cfcd-420c-b280-82aec21ca407" />
+
+
 
 ## 📊 實驗結果 (Results)
 本模型使用 COCO 評估標準進行驗證，在 IoU=0.5 的標準下取得穩健的偵測表現：
